@@ -6,7 +6,7 @@
 
 - Demonstrates the execution of both solutions using code snippets and explains the mathematical formula used in the second solution.
 
--Different factors to determine which solution is "better" are discussed, such as speed, memory usage, readability, and brevity. The focus in this video is primarily on speed.
+- Different factors to determine which solution is "better" are discussed, such as speed, memory usage, readability, and brevity. The focus in this video is primarily on speed.
 
 - The use of timing functions to measure the execution time of code is explained, along with a demonstration using the two solutions.
 
