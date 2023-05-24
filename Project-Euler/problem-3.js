@@ -6,14 +6,19 @@
  * @returns {number} The largest prime factor of the given number.
  */
 const largestPrimeFactor = (number) => {
-  for (let i = 2; i < number; i++) {
-    if (number % i === 0) {
-      number = number / i;
+  let largestFactor = number;
+
+  for (let i = 2; i <= Math.sqrt(largestFactor); i++) {
+    if (!(largestFactor % i)) {
+      let factor = largestFactor / i;
+      let candidate = largestPrimeFactor(factor);
+
+      return i > candidate ? i : candidate;
     }
   }
 
-  return number;
+  return largestFactor;
 };
 
-console.log(largestPrimeFactor(13195)); // 29
+console.log(largestPrimeFactor(8)); // 29
 console.log(largestPrimeFactor(600851475143)); // 6857
